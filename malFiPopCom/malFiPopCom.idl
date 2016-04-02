@@ -1,0 +1,18 @@
+// malFiPopCom.idl : IDL source for malFiPopCom
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (malFiPopCom.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(15184B1C-8D16-4070-9759-53FC3D8ED716),
+	version(1.0),
+]
+library malFiPopComLib
+{
+	importlib("stdole2.tlb");
+};
+
