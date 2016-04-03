@@ -8,11 +8,27 @@ import "oaidl.idl";
 import "ocidl.idl";
 
 [
+	object,
+	uuid(27E7520F-0FB3-424E-9EDA-33D9BD7CAE9C),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ImfpDatetime : IDispatch{
+};
+[
 	uuid(15184B1C-8D16-4070-9759-53FC3D8ED716),
 	version(1.0),
 ]
 library malFiPopComLib
 {
 	importlib("stdole2.tlb");
+	[
+		uuid(A2C8D989-557A-43DE-8A56-C15C84E09EA1)		
+	]
+	coclass mfpDatetime
+	{
+		[default] interface ImfpDatetime;
+	};
 };
 

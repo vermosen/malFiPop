@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {A2C8D989-557A-43DE-8A56-C15C84E09EA1} = s 'mfpDatetime Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{15184B1C-8D16-4070-9759-53FC3D8ED716}'
+			Version = s '1.0'
+		}
+	}
+}

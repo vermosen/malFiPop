@@ -15,15 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="mfp\time\timeseries.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="time\datetime.cpp">
+    <ClCompile Include="mfp\time\datetime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mfp\error.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="time\datetime.hpp">
+    <ClInclude Include="mfp\time\timeseries.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mfp\time\datetime.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mfp\utilities\utilities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mfp\error.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
